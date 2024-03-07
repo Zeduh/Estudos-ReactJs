@@ -12,13 +12,18 @@ import Pai from './components/comunicacao/direta/Pai'
 import Super from './components/comunicacao/indireta/Super'
 import Input from'./components/form/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/mega'
 
-export default props =>
+const App = () => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#11 - Gerador da mega" color="#a2c4c9">
+                <Mega qtdeNumero={6}></Mega>
+            </Card>
+
             <Card titulo="#10 - Contador" color="#293E6A">
-                <Contador ></Contador>
+                <Contador></Contador>
             </Card>
 
             <Card titulo="#09 - Input" color="#9C0F5F">
@@ -65,3 +70,6 @@ export default props =>
             </Card>
         </div>
     </div>
+)
+
+export default App;
